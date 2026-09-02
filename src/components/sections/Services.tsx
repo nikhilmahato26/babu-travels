@@ -3,48 +3,49 @@ import {
   Map, 
   MapPin, 
   BusFront, 
-  Bus 
+  Bus,
+  Plane
 } from 'lucide-react';
 
 const services = [
   {
-    title: 'Car Rental',
-    description: 'Convenient vehicle rental for personal and travel requirements.',
-    icon: Car,
+    title: 'Airport Taxi Service Kadapa',
+    description: 'On-time airport taxi pickup & drop for Kadapa Airport, Tirupati, Bangalore, and Chennai airports.',
+    icon: Plane,
   },
   {
-    title: 'Taxi Service',
-    description: 'Comfortable taxi solutions for local and long-distance journeys.',
+    title: 'Local Taxi Service Kadapa',
+    description: 'Comfortable hourly and full-day local taxi service across Kadapa city and nearby attractions.',
     icon: MapPin,
   },
   {
-    title: 'Outstation Car Rental',
-    description: 'Reliable vehicles for intercity and outstation travel.',
+    title: 'Cab Service Kadapa',
+    description: '24/7 reliable and safe cab booking in Kadapa with experienced, courteous chauffeurs.',
+    icon: Car,
+  },
+  {
+    title: 'Outstation Cab Rental',
+    description: 'Seamless intercity and outstation cab booking from Kadapa to any destination across India.',
     icon: Map,
   },
   {
     title: 'Innova Crysta Rental',
-    description: 'Premium and spacious vehicle option for comfortable travel.',
+    description: 'Premium and spacious 7-seater luxury SUV option for family and corporate travel.',
     icon: Car,
   },
   {
-    title: 'Tempo Traveller',
-    description: '12-seater vehicle suitable for families and groups.',
+    title: 'Tempo Traveller (12S)',
+    description: 'Spacious 12-seater AC vehicle ideal for family pilgrimages, group tours, and events.',
     icon: BusFront,
   },
   {
-    title: 'Urbania Rental',
-    description: '16-seater premium group transportation.',
+    title: 'Force Urbania (16S)',
+    description: 'Ultra-comfortable 16-seater luxury van with modern reclining seats and ample legroom.',
     icon: BusFront,
   },
   {
-    title: 'Mini Bus Rental',
-    description: '22-seater and 27-seater options for larger groups.',
-    icon: Bus,
-  },
-  {
-    title: 'Bus Rental',
-    description: 'Group transportation solutions for larger journeys and events.',
+    title: 'Bus & Mini Bus Rental',
+    description: '22S, 27S, and luxury large bus transportation solutions for weddings, school, and corporate trips.',
     icon: Bus,
   },
 ];
@@ -60,10 +61,10 @@ export function Services() {
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Our Services</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Comprehensive Travel Solutions</h2>
+          <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Our Services in Kadapa</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Taxi & Cab Services in Kadapa</h2>
           <p className="text-slate-600 text-lg">
-            We provide a wide range of reliable and comfortable transportation options tailored to your needs.
+            From local city rides and airport transfers to outstation tours, we provide trusted transportation across Kadapa.
           </p>
         </div>
 

@@ -30,17 +30,22 @@ export function Outstation() {
           
           {/* Content Side */}
           <div className="order-1 lg:order-2">
-            <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-2 block">Outstation Travel</span>
+            <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-2 block">Outstation & Airport Cab Service Kadapa</span>
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-              Your Journey <br/>
-              <span className="text-primary">Beyond The City</span>
+              Seamless Journeys <br/>
+              <span className="text-primary">From Kadapa To Anywhere</span>
             </h2>
             <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-              Comfortable vehicles for outstation and intercity travel. Whether you are planning a family vacation, a long-distance road trip, or an intercity corporate journey, we ensure a smooth and safe experience.
+              Top-rated cab service in Kadapa for outstation trips, airport transfers, and group pilgrimages. Punctual, sanitized cabs with experienced drivers for trips to Tirupati, Bangalore, Hyderabad, Chennai, and beyond.
             </p>
             
             <ul className="space-y-4 mb-10">
-              {['Outstation Car Rental', 'Group Travel & Family Trips', 'Long-Distance Travel', 'Premium Vehicle Options'].map((item, i) => (
+              {[
+                'Airport Taxi Service Kadapa (Tirupati, BLR & MAA Airports)',
+                'Local Taxi Service Kadapa & Sightseeing Tours',
+                'Outstation Cab Service Kadapa (One-way & Round-trip)',
+                'Innova Crysta, Tempo Traveller & Urbania Options'
+              ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
                     <Compass className="w-3.5 h-3.5" />

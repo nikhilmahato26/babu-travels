@@ -22,7 +22,7 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    let msg = `Hello Babu Tours And Travels, I have a new enquiry.\n\n`;
+    let msg = `Hello Babu Tours & Travels, I have a new enquiry.\n\n`;
     msg += `*Name:* ${formData.name || 'Not specified'}\n`;
     msg += `*Phone:* ${formData.phone || 'Not specified'}\n`;
     if (formData.email) msg += `*Email:* ${formData.email}\n`;
@@ -46,10 +46,10 @@ export function Contact() {
           <div>
             <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Contact Us</span>
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-              Get In Touch For <br/>Your Next Journey
+              Book Cab & Taxi Service in Kadapa
             </h2>
             <p className="text-slate-600 text-lg mb-10">
-              Ready to book a vehicle or need more information? Reach out to us using the details below or fill out the enquiry form.
+              Need Airport taxi service Kadapa, Local taxi service Kadapa, or an outstation tour? Contact Babu Tours & Travels for fast, dependable booking.
             </p>
             
             <div className="space-y-8">
@@ -58,7 +58,7 @@ export function Contact() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 mb-1">Phone</h4>
+                  <h4 className="font-bold text-slate-900 mb-1">Phone (24/7)</h4>
                   <p className="text-slate-600">9603323998</p>
                   <p className="text-slate-600">9866466497</p>
                 </div>
@@ -79,8 +79,8 @@ export function Contact() {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 mb-1">Address</h4>
-                  <p className="text-slate-600">Professor Colony, Angadividi<br/>PIN: 516004</p>
+                  <h4 className="font-bold text-slate-900 mb-1">Office Location</h4>
+                  <p className="text-slate-600">Professor Colony, Angadividi<br/>Kadapa, Andhra Pradesh - PIN: 516004</p>
                 </div>
               </div>
             </div>

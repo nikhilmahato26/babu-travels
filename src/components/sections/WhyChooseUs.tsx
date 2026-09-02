@@ -31,15 +31,15 @@ export function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-2 block">Why Choose Babu Tours And Travels</span>
+            <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-2 block">Why Choose Babu Tours & Travels Kadapa</span>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Premium Travel Experience <br/>
+              Kadapa's Most Trusted <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                Every Single Time
+                Cab & Taxi Service
               </span>
             </h2>
             <p className="text-slate-300 text-lg mb-8 leading-relaxed">
-              We specialize in providing top-tier car rental, taxi services, and outstation travel solutions. Whether you need a premium Innova Crysta for a family trip or a large bus for group transportation, we deliver exceptional service.
+              We specialize in providing top-tier cab service in Kadapa, airport taxi transfers, and outstation travel solutions. Whether you need an Innova Crysta for a family trip, a local taxi in Kadapa, or a large bus for group tours, we deliver exceptional service.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">

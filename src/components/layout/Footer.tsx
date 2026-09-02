@@ -9,7 +9,7 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <img 
                 src="/logo.jpg" 
-                alt="Babu Tours And Travels Logo" 
+                alt="Babu Tours & Travels Logo" 
                 className="w-12 h-12 object-contain rounded-xl shadow-md bg-white p-1"
               />
               <div className="flex flex-col">
@@ -17,12 +17,12 @@ export function Footer() {
                   Babu Tours
                 </span>
                 <span className="text-xs font-medium tracking-widest uppercase text-secondary">
-                  And Travels
+                  & Travels
                 </span>
               </div>
             </div>
             <p className="text-slate-400 text-sm mb-6 leading-relaxed">
-              Car Rental • Taxi Service • Outstation Travel • Group Transportation
+              #1 Cab Service in Kadapa • Airport Taxi Service Kadapa • Local Taxi Service Kadapa • Outstation Travel
             </p>
           </div>
           
@@ -30,7 +30,7 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {['Home', 'Services', 'Fleet', 'Outstation', 'About', 'Contact'].map(link => (
+              {['Home', 'Fleet', 'Services', 'Outstation', 'Gallery', 'Contact'].map(link => (
                 <li key={link}>
                   <a href={`#${link.toLowerCase()}`} className="text-sm hover:text-primary transition-colors">
                     {link}
@@ -42,20 +42,16 @@ export function Footer() {
           
           {/* Vehicles & Services */}
           <div>
-            <h4 className="text-white font-semibold mb-6">Vehicles</h4>
+            <h4 className="text-white font-semibold mb-6">Services in Kadapa</h4>
             <ul className="space-y-3 mb-8">
-              {['Innova Crysta', 'Tempo Traveller', 'Urbania', 'Mini Bus', 'Bus'].map(vehicle => (
-                <li key={vehicle}>
-                  <a href="#fleet" className="text-sm hover:text-primary transition-colors">
-                    {vehicle}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            
-            <h4 className="text-white font-semibold mb-6">Services</h4>
-            <ul className="space-y-3">
-              {['Car Rental', 'Taxi Service', 'Outstation Rental', 'Group Transportation'].map(service => (
+              {[
+                'Airport Taxi Service Kadapa',
+                'Local Taxi Service Kadapa',
+                'Cab Service Kadapa',
+                'Outstation Cab Rental',
+                'Innova Crysta Rental',
+                'Tempo Traveller & Urbania'
+              ].map(service => (
                 <li key={service}>
                   <a href="#services" className="text-sm hover:text-primary transition-colors">
                     {service}
@@ -69,11 +65,13 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-6">Contact Info</h4>
             <ul className="space-y-3">
+              <li className="text-sm font-semibold text-white">Babu Tours & Travels</li>
               <li className="text-sm">9603323998</li>
               <li className="text-sm">9866466497</li>
               <li className="text-sm">9866466497b@gmail.com</li>
               <li className="text-sm mt-4 text-slate-400">
                 Professor Colony, Angadividi<br/>
+                Kadapa, Andhra Pradesh<br/>
                 PIN 516004
               </li>
             </ul>
@@ -82,7 +80,7 @@ export function Footer() {
         </div>
         
         <div className="pt-8 border-t border-slate-800 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} Babu Tours And Travels. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Babu Tours & Travels. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

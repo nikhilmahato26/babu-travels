@@ -18,7 +18,7 @@ export function GroupTravel() {
             Travel Together. Travel Comfortably.
           </h2>
           <p className="text-slate-600 text-lg">
-            Babu Tours And Travels provides multiple vehicle options tailored perfectly for Family Trips, Group Tours, Events, and Corporate Travel.
+            Babu Tours & Travels provides multiple vehicle options tailored perfectly for Family Trips, Group Tours, Events, and Corporate Travel.
           </p>
         </div>
 

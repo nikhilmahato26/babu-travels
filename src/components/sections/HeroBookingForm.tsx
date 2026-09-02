@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 export function HeroBookingForm() {
-  const [activeTab, setActiveTab] = useState<'outstation' | 'local'>('outstation');
+  const [activeTab, setActiveTab] = useState<'outstation' | 'local' | 'airport'>('outstation');
   const [pickup, setPickup] = useState('');
   const [destination, setDestination] = useState('');
   const [date, setDate] = useState('');
@@ -13,10 +13,11 @@ export function HeroBookingForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    let message = `Hello Babu Tours And Travels, I would like to get a quote for a ${activeTab} trip.\n\n`;
-    message += `*Pickup:* ${pickup || 'Not specified'}\n`;
-    if (activeTab === 'outstation') {
-      message += `*Destination:* ${destination || 'Not specified'}\n`;
+    let tripType = activeTab === 'outstation' ? 'Outstation Cab' : activeTab === 'local' ? 'Local Taxi Service Kadapa' : 'Airport Taxi Service Kadapa';
+    let message = `Hello Babu Tours & Travels, I would like to get a quote for *${tripType}*.\n\n`;
+    message += `*Pickup:* ${pickup || 'Kadapa'}\n`;
+    if (activeTab === 'outstation' || activeTab === 'airport') {
+      message += `*Destination / Airport:* ${destination || 'Not specified'}\n`;
     }
     message += `*Date:* ${date || 'Not specified'}\n`;
     message += `*Vehicle:* ${vehicle || 'Not specified'}\n`;
@@ -27,7 +28,7 @@ export function HeroBookingForm() {
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-4 md:p-6 w-full max-w-5xl mx-auto -mt-16 md:-mt-24 relative z-20 border border-slate-100">
-      <div className="flex items-center gap-4 mb-6 border-b border-slate-100 pb-4">
+      <div className="flex flex-wrap items-center gap-4 mb-6 border-b border-slate-100 pb-4">
         <button
           onClick={() => setActiveTab('outstation')}
           className={cn(
@@ -35,7 +36,7 @@ export function HeroBookingForm() {
             activeTab === 'outstation' ? "text-primary border-primary" : "text-slate-500 border-transparent hover:text-slate-800"
           )}
         >
-          Outstation Travel
+          Outstation Cabs
         </button>
         <button
           onClick={() => setActiveTab('local')}
@@ -44,7 +45,16 @@ export function HeroBookingForm() {
             activeTab === 'local' ? "text-primary border-primary" : "text-slate-500 border-transparent hover:text-slate-800"
           )}
         >
-          Local Rental
+          Local Taxi Kadapa
+        </button>
+        <button
+          onClick={() => setActiveTab('airport')}
+          className={cn(
+            "text-sm md:text-base font-semibold transition-colors pb-4 -mb-4 border-b-2",
+            activeTab === 'airport' ? "text-primary border-primary" : "text-slate-500 border-transparent hover:text-slate-800"
+          )}
+        >
+          Airport Taxi Kadapa
         </button>
       </div>
 
@@ -63,16 +73,18 @@ export function HeroBookingForm() {
           </div>
         </div>
         
-        {activeTab === 'outstation' && (
+        {activeTab !== 'local' && (
           <div className="flex flex-col gap-1.5 lg:col-span-1">
-            <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Destination</label>
+            <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+              {activeTab === 'airport' ? 'Airport / Destination' : 'Destination'}
+            </label>
             <div className="relative">
               <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
               <input 
                 type="text" 
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
-                placeholder="City or Address"
+                placeholder={activeTab === 'airport' ? 'e.g. Kadapa / Tirupati / BLR' : 'City or Address'}
                 className="w-full h-11 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
               />
             </div>

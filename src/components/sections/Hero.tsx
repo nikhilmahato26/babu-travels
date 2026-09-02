@@ -38,8 +38,8 @@ export function Hero() {
         {/* Content */}
         <div className="relative h-full max-w-7xl mx-auto px-4 md:px-8 flex flex-col justify-center">
           <div ref={textRef} className="max-w-3xl pt-20">
-            <span className="hero-text block text-secondary font-medium tracking-wider uppercase mb-4 text-sm md:text-base">
-              Premium Transportation Services
+            <span className="hero-text inline-flex items-center gap-2 bg-secondary/20 text-secondary border border-secondary/30 px-3 py-1 rounded-full font-medium tracking-wider uppercase mb-4 text-xs md:text-sm backdrop-blur-sm">
+              📍 #1 Cab Service Kadapa • Airport & Local Taxi
             </span>
             <h1 className="hero-text text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6">
               Reliable Travel.<br />
@@ -47,11 +47,11 @@ export function Hero() {
                 Comfortable Journeys.
               </span>
             </h1>
-            <p className="hero-text text-lg md:text-xl text-slate-300 mb-4 max-w-2xl font-light">
-              Car Rental, Taxi Service & Outstation Travel Solutions
+            <p className="hero-text text-lg md:text-xl text-slate-200 mb-3 max-w-2xl font-light">
+              Airport Taxi Service Kadapa • Local Taxi Service Kadapa • Outstation Travel
             </p>
             <p className="hero-text text-sm md:text-base text-slate-400 mb-10 font-medium">
-              Cars • Tempo Travellers • Urbania • Mini Bus • Bus
+              Cars • Tempo Travellers • Urbania • Mini Bus • Bus • 24/7 Service in Kadapa
             </p>
             
             <div className="hero-text flex flex-wrap gap-4">
