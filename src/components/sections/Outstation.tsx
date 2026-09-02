@@ -50,7 +50,11 @@ export function Outstation() {
               ))}
             </ul>
             
-            <Button size="lg" className="h-14 px-8 text-base shadow-lg hover:shadow-xl transition-shadow">
+            <Button 
+              onClick={() => window.open('https://wa.me/919603323998', '_blank')}
+              size="lg" 
+              className="h-14 px-8 text-base shadow-lg hover:shadow-xl transition-shadow"
+            >
               Plan Your Journey
             </Button>
           </div>

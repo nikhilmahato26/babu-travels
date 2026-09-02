@@ -55,10 +55,19 @@ export function Hero() {
             </p>
             
             <div className="hero-text flex flex-wrap gap-4">
-              <Button size="lg" className="h-14 px-8 text-base shadow-lg shadow-primary/25">
+              <Button 
+                onClick={() => window.open('https://wa.me/919603323998', '_blank')}
+                size="lg" 
+                className="h-14 px-8 text-base shadow-lg shadow-primary/25"
+              >
                 Book Now
               </Button>
-              <Button size="lg" variant="outline" className="h-14 px-8 text-base bg-white/10 text-white border-white/20 hover:bg-white/20 hover:text-white backdrop-blur-sm">
+              <Button 
+                onClick={() => document.getElementById('fleet')?.scrollIntoView({ behavior: 'smooth' })}
+                size="lg" 
+                variant="outline" 
+                className="h-14 px-8 text-base bg-white/10 text-white border-white/20 hover:bg-white/20 hover:text-white backdrop-blur-sm"
+              >
                 View Our Fleet
               </Button>
             </div>

@@ -52,7 +52,13 @@ export function VehicleCard({ vehicle }: { vehicle: VehicleProps }) {
         )}
         
         <div className="mt-auto pt-4 border-t border-slate-100">
-          <Button className="w-full shadow-sm hover:shadow-md transition-shadow group-hover:bg-primary/90">
+          <Button 
+            onClick={() => {
+              const msg = encodeURIComponent(`Hello Babu Tours And Travels, I am interested in enquiring about the ${vehicle.name}.`);
+              window.open(`https://wa.me/919603323998?text=${msg}`, '_blank');
+            }}
+            className="w-full shadow-sm hover:shadow-md transition-shadow group-hover:bg-primary/90"
+          >
             Enquire Now
           </Button>
         </div>

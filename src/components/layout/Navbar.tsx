@@ -67,7 +67,10 @@ export function Navbar() {
             <span className={cn(isScrolled ? "text-slate-700" : "text-slate-800")}>9603323998</span>
           </div>
           
-          <Button className="hidden md:flex shadow-md hover:shadow-lg transition-shadow">
+          <Button 
+            onClick={() => window.open('https://wa.me/919603323998', '_blank')}
+            className="hidden md:flex shadow-md hover:shadow-lg transition-shadow"
+          >
             Book a Vehicle
           </Button>
           
@@ -93,7 +96,11 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <Button className="w-full mt-4" size="lg">
+          <Button 
+            onClick={() => window.open('https://wa.me/919603323998', '_blank')}
+            className="w-full mt-4" 
+            size="lg"
+          >
             Book a Vehicle
           </Button>
         </div>

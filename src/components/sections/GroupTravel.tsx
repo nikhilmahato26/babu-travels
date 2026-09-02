@@ -45,7 +45,11 @@ export function GroupTravel() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="h-14 px-8 text-base shadow-lg">
+          <Button 
+            onClick={() => window.open('https://wa.me/919603323998', '_blank')}
+            size="lg" 
+            className="h-14 px-8 text-base shadow-lg"
+          >
             Find Your Vehicle
           </Button>
         </div>
