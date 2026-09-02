@@ -6,13 +6,20 @@ export function Footer() {
           
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex flex-col mb-6">
-              <span className="text-2xl font-bold leading-none tracking-tight text-white">
-                Babu Tours
-              </span>
-              <span className="text-xs font-medium tracking-widest uppercase text-primary">
-                And Travels
-              </span>
+            <div className="flex items-center gap-3 mb-6">
+              <img 
+                src="/logo.jpg" 
+                alt="Babu Tours And Travels Logo" 
+                className="w-12 h-12 object-contain rounded-xl shadow-md bg-white p-1"
+              />
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold leading-none tracking-tight text-white">
+                  Babu Tours
+                </span>
+                <span className="text-xs font-medium tracking-widest uppercase text-secondary">
+                  And Travels
+                </span>
+              </div>
             </div>
             <p className="text-slate-400 text-sm mb-6 leading-relaxed">
               Car Rental • Taxi Service • Outstation Travel • Group Transportation

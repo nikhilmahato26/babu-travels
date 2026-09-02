@@ -33,9 +33,14 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-2">
+        <a href="#home" className="flex items-center gap-3">
+          <img 
+            src="/logo.jpg" 
+            alt="Babu Tours And Travels Logo" 
+            className="w-10 h-10 object-contain rounded-lg shadow-sm"
+          />
           <div className="flex flex-col">
-            <span className={cn("text-xl md:text-2xl font-bold leading-none tracking-tight", isScrolled ? "text-primary" : "text-primary")}>
+            <span className={cn("text-xl md:text-2xl font-bold leading-none tracking-tight text-primary")}>
               Babu Tours
             </span>
             <span className={cn("text-xs font-medium tracking-widest uppercase", isScrolled ? "text-slate-500" : "text-slate-600")}>
