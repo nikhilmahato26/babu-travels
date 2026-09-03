@@ -37,7 +37,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans selection:bg-primary/30">
+    <div className="min-h-screen bg-slate-50 font-sans selection:bg-primary/30 pb-16 md:pb-0">
       <Navbar />
       <main>
         <Hero />
