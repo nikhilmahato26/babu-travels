@@ -27,8 +27,8 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out',
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-3 md:py-4'
+        'fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300 ease-in-out',
+        isScrolled ? 'py-2.5' : 'py-3 md:py-3.5'
       )}
     >
       {/* Top Keyword & Announcement Bar */}
@@ -36,7 +36,7 @@ export function Navbar() {
         "hidden md:block transition-all duration-300 overflow-hidden mb-2 px-4 md:px-8",
         isScrolled ? "h-0 opacity-0 mb-0" : "h-auto opacity-100"
       )}>
-        <div className="max-w-7xl mx-auto flex items-center justify-between text-xs font-medium text-slate-600 bg-slate-900/5 backdrop-blur-md px-4 py-1.5 rounded-full border border-slate-900/5">
+        <div className="max-w-7xl mx-auto flex items-center justify-between text-xs font-medium text-slate-600 bg-slate-100/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-slate-200/70">
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span className="font-semibold text-slate-800">Cab Service Kadapa:</span>
@@ -61,10 +61,10 @@ export function Navbar() {
             className="w-10 h-10 object-contain rounded-lg shadow-sm"
           />
           <div className="flex flex-col">
-            <span className={cn("text-xl md:text-2xl font-bold leading-none tracking-tight text-primary")}>
+            <span className="text-xl md:text-2xl font-bold leading-none tracking-tight text-primary">
               Babu Tours
             </span>
-            <span className={cn("text-xs font-medium tracking-widest uppercase", isScrolled ? "text-slate-500" : "text-slate-600")}>
+            <span className="text-xs font-medium tracking-widest uppercase text-slate-500">
               & Travels • Kadapa
             </span>
           </div>
@@ -76,10 +76,7 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
-                isScrolled ? "text-slate-700" : "text-slate-800"
-              )}
+              className="text-sm font-medium text-slate-700 transition-colors hover:text-primary"
             >
               {link.name}
             </a>
@@ -90,7 +87,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <div className="hidden lg:flex items-center gap-2 mr-4 text-sm font-medium">
             <Phone className="w-4 h-4 text-primary" />
-            <span className={cn(isScrolled ? "text-slate-700" : "text-slate-800")}>9603323998</span>
+            <span className="text-slate-700">9603323998</span>
           </div>
           
           <Button 

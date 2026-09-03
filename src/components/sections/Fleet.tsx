@@ -32,7 +32,7 @@ const fleetData: VehicleProps[] = [
     category: 'Mini Bus',
     capacity: '22 Seater / 27 Seater',
     description: 'Suitable for larger groups and organized travel.',
-    image: 'https://content.jdmagicbox.com/v2/comp/malappuram/d1/9999px483.x483.260530083105.l3d1/catalogue/s-and-t-holidays-manjeri-malappuram-travel-agents-x7ilxplroc-250.jpg',
+    image: '/minibus.jpg',
     features: ['AC/Non-AC', 'Spacious', 'Comfortable']
   },
   {
