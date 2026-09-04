@@ -56,11 +56,11 @@ export function Hero() {
             
             <div className="hero-text flex flex-wrap gap-4">
               <Button 
-                onClick={() => window.open('https://wa.me/919603323998', '_blank')}
+                onClick={() => window.location.href = 'tel:+919603323998'}
                 size="lg" 
                 className="h-14 px-8 text-base shadow-lg shadow-primary/25"
               >
-                Book Now
+                Call Now
               </Button>
               <Button 
                 onClick={() => document.getElementById('fleet')?.scrollIntoView({ behavior: 'smooth' })}
